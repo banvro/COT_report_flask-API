@@ -180,9 +180,10 @@ def homepage():
     return "thoomeee"
 
 def read_data_from_txt(report_type):
+    # Define the file mapping
     file_mapping = {
-        'legacy_fut': 'annual.txt',  # Changed from FUT86_16.txt to annual.txt
-        'disaggregated_fut': 'annual.txt',  # Assuming you want to use the same for other types
+        'legacy_fut': 'FinComYY.txt',  # Use FinComYY.txt for legacy_fut
+        'disaggregated_fut': 'annual.txt',  # Keeping other mappings unchanged
         'fut_options': 'F_Disagg06_16.txt'
     }
     file_name = file_mapping.get(report_type)
@@ -198,19 +199,25 @@ def read_data_from_txt(report_type):
                 print("DataFrame columns:", df.columns.tolist())
                 print("First few rows of DataFrame:\n", df.head())
 
-                # Check if 'As of Date in Form YYYY-MM-DD' column exists to sort data
-                if 'As of Date in Form YYYY-MM-DD' in df.columns:
-                    df = df.sort_values(by="As of Date in Form YYYY-MM-DD", ascending=False).head(5)
+                # Check if 'Market_and_Exchange_Names' column exists and filter data
+                if 'Market_and_Exchange_Names' in df.columns:
+                    filtered_df = df[df['Market_and_Exchange_Names'] == 'USD INDEX - ICE FUTURES U.S.']
+                    if not filtered_df.empty:
+                        # Sort data by 'As of Date in Form YYYY-MM-DD' if that column exists
+                        if 'As of Date in Form YYYY-MM-DD' in filtered_df.columns:
+                            filtered_df = filtered_df.sort_values(by="As of Date in Form YYYY-MM-DD", ascending=False).head(5)
+                        return filtered_df.to_dict(orient='records')
+                    else:
+                        print("No records found for 'USD INDEX - ICE FUTURES U.S.'")
+                        return None
                 else:
-                    # Handle case where 'As of Date in Form YYYY-MM-DD' column doesn't exist
-                    print("'As of Date in Form YYYY-MM-DD' column not found. Using default sorting or first 5 records.")
-                    df = df.head(5)  # Just get the first 5 records as a fallback
-
-                return df.to_dict(orient='records')
+                    print("'Market_and_Exchange_Names' column not found.")
+                    return None
             except Exception as e:
                 print(f"Error reading CSV data: {e}")
                 return None
     return None
+
 
 
 @app.route('/api/cot_reports', methods=['GET'])
