@@ -269,7 +269,7 @@ def get_cot_report():
     else:
         data = read_data_from_txt(report_type)
         if isinstance(data, list):  # If data is in JSON format
-            return jsonify({"status": "success", "data": data}), 200
+            return jsonify({"status": "success", "data": data[0]}), 200
         else:
             return jsonify({"status": "error", "message": "No report found for the given report_type"}), 404
 
