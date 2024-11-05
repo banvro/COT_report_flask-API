@@ -6,6 +6,7 @@ from datetime import datetime, timedelta, timezone
 import cot_reports
 from io import StringIO
 
+
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///cot_reports.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -38,6 +39,10 @@ def fetch_latest_cot_data(report_type):
                 
     except Exception as e:
         print(f"Failed to fetch data for {report_type}: {e}")
+
+@app.route("/")
+def homepage():
+    return "this is home page"
 
 def read_data_from_txt(report_type):
     file_mapping = {
