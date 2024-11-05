@@ -168,6 +168,7 @@ def fetch_latest_cot_data(report_type):
     except Exception as e:
         print(f"Failed to fetch data for {report_type}: {e}")
 
+
 def background_fetch_reports():
     report_types = ['legacy_fut', 'disaggregated_fut', 'fut_options']
     for report_type in report_types:
@@ -180,8 +181,8 @@ def homepage():
 
 def read_data_from_txt(report_type):
     file_mapping = {
-        'legacy_fut': 'FUT86_16.txt',
-        'disaggregated_fut': 'annual.txt',
+        'legacy_fut': 'annual.txt',  # Changed from FUT86_16.txt to annual.txt
+        'disaggregated_fut': 'annual.txt',  # Assuming you want to use the same for other types
         'fut_options': 'F_Disagg06_16.txt'
     }
     file_name = file_mapping.get(report_type)
@@ -192,17 +193,17 @@ def read_data_from_txt(report_type):
             try:
                 csv_data = StringIO(file_content)
                 df = pd.read_csv(csv_data, low_memory=False)
-                
+
                 # Print the columns for debugging
                 print("DataFrame columns:", df.columns.tolist())
                 print("First few rows of DataFrame:\n", df.head())
 
-                # Check if 'timestamp' column exists
-                if 'timestamp' in df.columns:
-                    df = df.sort_values(by="timestamp", ascending=False).head(5)
+                # Check if 'As of Date in Form YYYY-MM-DD' column exists to sort data
+                if 'As of Date in Form YYYY-MM-DD' in df.columns:
+                    df = df.sort_values(by="As of Date in Form YYYY-MM-DD", ascending=False).head(5)
                 else:
-                    # Handle case where 'timestamp' column doesn't exist
-                    print("'timestamp' column not found. Using default sorting or first 5 records.")
+                    # Handle case where 'As of Date in Form YYYY-MM-DD' column doesn't exist
+                    print("'As of Date in Form YYYY-MM-DD' column not found. Using default sorting or first 5 records.")
                     df = df.head(5)  # Just get the first 5 records as a fallback
 
                 return df.to_dict(orient='records')
@@ -211,18 +212,45 @@ def read_data_from_txt(report_type):
                 return None
     return None
 
+
 @app.route('/api/cot_reports', methods=['GET'])
 def get_cot_report():
     report_type = request.args.get('report_type')
+    commodity_code = request.args.get('commodity_code')  # New parameter for filtering
     page = int(request.args.get('page', 1))
     page_size = int(request.args.get('page_size', 10))
 
     if not report_type:
         return jsonify({"status": "error", "message": "report_type parameter is required"}), 400
 
-    one_month_ago = datetime.now(timezone.utc) - timedelta(days=30)
-    reports_query = CotReport.query.filter_by(report_type=report_type).filter(CotReport.timestamp >= one_month_ago)
+    # Check if the request is specifically for the "DXY USD Index"
+    if report_type.lower() == "dxy usd index":
+        latest_report = CotReport.query.filter_by(report_type=report_type) \
+            .order_by(CotReport.timestamp.desc()) \
+            .first()  # Fetch only the most recent report
+        
+        if latest_report:
+            response_data = {
+                "data": latest_report.data[:500] + '...' if len(latest_report.data) > 500 else latest_report.data,
+                "timestamp": latest_report.timestamp
+            }
+            return jsonify({"status": "success", "data": response_data}), 200
+        else:
+            return jsonify({"status": "error", "message": "No report found for the DXY USD Index"}), 404
 
+    # Build the base query for the cot reports
+    reports_query = CotReport.query.filter_by(report_type=report_type)
+
+    # Apply additional filter if commodity_code is provided
+    if commodity_code:
+        # Assuming 'commodity_code' is a field in your CotReport model; adjust as necessary.
+        reports_query = reports_query.filter(CotReport.data.like(f'%{commodity_code}%'))  # Example condition
+
+    # Optionally filter by timestamp (last 30 days)
+    one_month_ago = datetime.now(timezone.utc) - timedelta(days=30)
+    reports_query = reports_query.filter(CotReport.timestamp >= one_month_ago)
+
+    # Paginate the query results
     reports = reports_query.order_by(CotReport.timestamp.desc()).paginate(page=page, per_page=page_size, error_out=False).items
 
     if reports:
@@ -237,6 +265,7 @@ def get_cot_report():
             return jsonify({"status": "success", "data": data}), 200
         else:
             return jsonify({"status": "error", "message": "No report found for the given report_type"}), 404
+
 
 @app.route('/api/fetch_cot_data', methods=['POST'])
 def fetch_cot_data_endpoint():
@@ -257,5 +286,5 @@ if __name__ == '__main__':
     thread.start()
     
     print("Background thread started.")
-    
+        
     app.run(debug=True, host='0.0.0.0')
