@@ -171,6 +171,7 @@ def fetch_latest_cot_data(report_type):
 def background_fetch_reports():
     report_types = ['legacy_fut', 'disaggregated_fut', 'fut_options']
     for report_type in report_types:
+        print(f"Fetching data for {report_type}...")
         fetch_latest_cot_data(report_type)
 
 @app.route("/")
@@ -251,9 +252,10 @@ def fetch_cot_data_endpoint():
         return jsonify({"status": "error", "message": str(e)}), 500
 
 if __name__ == '__main__':
-    # Start the background thread to fetch reports
     thread = threading.Thread(target=background_fetch_reports)
     thread.daemon = True  # This makes sure the thread will exit when the main program does
     thread.start()
+    
+    print("Background thread started.")
     
     app.run(debug=True, host='0.0.0.0')
