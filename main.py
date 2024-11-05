@@ -42,7 +42,7 @@ def fetch_latest_cot_data(report_type):
 
 @app.route("/")
 def homepage():
-    return "this is home page"
+    return "thoomeee"
 
 def read_data_from_txt(report_type):
     file_mapping = {
