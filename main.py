@@ -44,12 +44,15 @@ def fetch_latest_cot_data(report_type):
         logging.error(f"Failed to fetch data for {report_type}: {e}")
 
 def background_fetch_reports():
-    report_types = ['legacy_fut', 'disaggregated_fut', 'fut_options']
-    for report_type in report_types:
-        logging.info(f"Fetching data for {report_type}...")
-        fetch_latest_cot_data(report_type)
-    logging.info("Background fetch complete. Scheduling next fetch in 60 seconds.")
-    threading.Timer(60, background_fetch_reports).start()  # Schedule next fetch in 60 seconds
+    with app.app_context():  # Ensure the application context is active
+        report_types = ['legacy_fut', 'disaggregated_fut', 'fut_options']
+        for report_type in report_types:
+            logging.info(f"Fetching data for {report_type}...")
+            fetch_latest_cot_data(report_type)
+        
+        # Schedule the next fetch in 60 seconds
+        logging.info("Background fetch complete. Scheduling next fetch in 60 seconds.")
+        threading.Timer(60, background_fetch_reports).start()
 
 @app.route("/")
 def homepage():
