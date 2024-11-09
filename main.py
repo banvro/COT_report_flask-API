@@ -44,6 +44,7 @@ def fetch_latest_cot_data(report_type):
         logging.error(f"Failed to fetch data for {report_type}: {e}")
 
 def background_fetch_reports():
+    print("stearttttttttttttttt")
     with app.app_context():  # Ensure the application context is active
         report_types = ['legacy_fut', 'disaggregated_fut', 'fut_options']
         for report_type in report_types:
