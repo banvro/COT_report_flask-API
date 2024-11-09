@@ -7,6 +7,9 @@ from datetime import datetime, timedelta, timezone
 import cot_reports
 from io import StringIO
 import threading  # Import threading module
+import logging
+
+logging.basicConfig(level=logging.INFO)
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///cot_reports.db'
@@ -160,13 +163,13 @@ def fetch_cot_data_endpoint():
     except Exception as e:
         return jsonify({"status": "error", "message": str(e)}), 500
 
-
 def background_fetch_reports():
     report_types = ['legacy_fut', 'disaggregated_fut', 'fut_options']
     for report_type in report_types:
-        print(f"Fetching data for {report_type}...")
+        logging.info(f"Fetching data for {report_type}...")  # Log each fetch operation
         fetch_latest_cot_data(report_type)
     # Schedule the next fetch in 60 seconds
+    logging.info("Background fetch complete. Scheduling next fetch in 60 seconds.")
     threading.Timer(60, background_fetch_reports).start()
 
 if __name__ == '__main__':
