@@ -26,27 +26,36 @@ class CotReport(db.Model):
 with app.app_context():
     db.create_all()
 
+import cot_reports
+
 def fetch_latest_cot_data(report_type):
     try:
+        # Fetch new data
         data = cot_reports.cot_all_reports(report_type)
         
         if data:
-            # Check if the latest report already exists to avoid duplicates
-            existing_report = CotReport.query.filter_by(report_type=report_type).order_by(CotReport.timestamp.desc()).first()
-            if not existing_report:
-                new_report = CotReport(report_type=report_type, data=data)
-                db.session.add(new_report)
-                db.session.commit()
-            else:
-                logging.info(f"Latest report for {report_type} already exists in the database.")
+            # Define file path based on report type
+            file_mapping = {
+                'legacy_fut': 'FinComYY.txt',
+                'gold': 'annual.txt',
+                'fut_options': 'F_Disagg06_16.txt'
+            }
+            file_name = file_mapping.get(report_type)
+            
+            if file_name:
+                # Write new data to the file, overwriting any existing content
+                with open(file_name, 'w') as file:
+                    file.write(data)
+                logging.info(f"File {file_name} updated with new data for {report_type}.")
                 
     except Exception as e:
-        logging.error(f"Failed to fetch data for {report_type}: {e}")
+        logging.error(f"Failed to fetch or write data for {report_type}: {e}")
+
 
 def background_fetch_reports():
     print("stearttttttttttttttt")
     with app.app_context():  # Ensure the application context is active
-        report_types = ['legacy_fut', 'disaggregated_fut', 'fut_options']
+        report_types = ['legacy_fut', 'gold', 'fut_options']
         for report_type in report_types:
             logging.info(f"Fetching data for {report_type}...")
             fetch_latest_cot_data(report_type)
