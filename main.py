@@ -59,24 +59,36 @@ def background_fetch_reports():
 def homepage():
     return "Welcome to the COT Reports API!"
 
+
 def read_data_from_txt(report_type):
+    print(report_type, "eeeeeeeeeeeeeeee")
     file_mapping = {
         'legacy_fut': 'FinComYY.txt',
-        'disaggregated_fut': 'annual.txt',
+        'gold': 'annual.txt',
         'fut_options': 'F_Disagg06_16.txt'
     }
     file_name = file_mapping.get(report_type)
-
+    print(file_name, "ooooooooooooooooooo")
     if file_name and os.path.exists(file_name):
         with open(file_name, 'r') as file:
-            file_content = file.read()
+            file_content = file.read() 
             try:
                 csv_data = StringIO(file_content)
                 df = pd.read_csv(csv_data, low_memory=False)
                 logging.info("DataFrame columns: %s", df.columns.tolist())
                 
                 if 'Market_and_Exchange_Names' in df.columns:
-                    filtered_df = df[df['Market_and_Exchange_Names'] == 'USD INDEX - ICE FUTURES U.S.']
+                    if report_type == "legacy_fut":
+                        filtered_df = df[df['Market_and_Exchange_Names'] == 'USD INDEX - ICE FUTURES U.S.']
+                        if not filtered_df.empty:
+                            if 'As of Date in Form YYYY-MM-DD' in filtered_df.columns:
+                                filtered_df = filtered_df.sort_values(by="As of Date in Form YYYY-MM-DD", ascending=False).head(5)
+                            return filtered_df.to_dict(orient='records')
+                        else:
+                            logging.info("No records found for 'USD INDEX - ICE FUTURES U.S.'")
+                            return None
+                elif report_type == "gold":
+                    filtered_df = df[df['Market and Exchange Names'] == 'GOLD - COMMODITY EXCHANGE INC.']
                     if not filtered_df.empty:
                         if 'As of Date in Form YYYY-MM-DD' in filtered_df.columns:
                             filtered_df = filtered_df.sort_values(by="As of Date in Form YYYY-MM-DD", ascending=False).head(5)
@@ -91,6 +103,15 @@ def read_data_from_txt(report_type):
                 logging.error(f"Error reading CSV data: {e}")
                 return None
     return None
+
+
+
+read_data_from_txt("gold")
+
+
+
+
+
 
 @app.route('/api/cot_reports', methods=['GET'])
 def get_cot_report():
@@ -127,6 +148,7 @@ def get_cot_report():
         response_data = [{"data": report.data[:500] + '...' if len(report.data) > 500 else report.data, "timestamp": report.timestamp} for report in reports]
         return jsonify({"status": "success", "data": response_data}), 200
     else:
+        print("am hereeeeeeeeeeeeee")
         data = read_data_from_txt(report_type)
         if isinstance(data, list):
             return jsonify({"status": "success", "data": data[0]}), 200
