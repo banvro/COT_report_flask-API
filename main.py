@@ -74,6 +74,7 @@ def read_data_from_txt(report_type):
     file_mapping = {
         'legacy_fut': 'FinComYY.txt',
         'gold': 'annual.txt',
+        'british_pound': 'annual.txt',
         'fut_options': 'F_Disagg06_16.txt'
     }
     file_name = file_mapping.get(report_type)
@@ -98,6 +99,15 @@ def read_data_from_txt(report_type):
                             return None
                 elif report_type == "gold":
                     filtered_df = df[df['Market and Exchange Names'] == 'GOLD - COMMODITY EXCHANGE INC.']
+                    if not filtered_df.empty:
+                        if 'As of Date in Form YYYY-MM-DD' in filtered_df.columns:
+                            filtered_df = filtered_df.sort_values(by="As of Date in Form YYYY-MM-DD", ascending=False).head(5)
+                        return filtered_df.to_dict(orient='records')
+                    else:
+                        logging.info("No records found for 'USD INDEX - ICE FUTURES U.S.'")
+                        return None
+                elif report_type == "british_pound":
+                    filtered_df = df[df['Market and Exchange Names'] == 'BRITISH POUND - CHICAGO MERCANTILE EXCHANGE']
                     if not filtered_df.empty:
                         if 'As of Date in Form YYYY-MM-DD' in filtered_df.columns:
                             filtered_df = filtered_df.sort_values(by="As of Date in Form YYYY-MM-DD", ascending=False).head(5)
