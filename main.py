@@ -75,6 +75,8 @@ def read_data_from_txt(report_type):
         'legacy_fut': 'FinComYY.txt',
         'gold': 'annual.txt',
         'british_pound': 'annual.txt',
+        'euro_currency': 'annual.txt',
+        'jpy_currency': 'annual.txt',
         'fut_options': 'F_Disagg06_16.txt'
     }
     file_name = file_mapping.get(report_type)
@@ -104,7 +106,7 @@ def read_data_from_txt(report_type):
                             filtered_df = filtered_df.sort_values(by="As of Date in Form YYYY-MM-DD", ascending=False).head(5)
                         return filtered_df.to_dict(orient='records')
                     else:
-                        logging.info("No records found for 'USD INDEX - ICE FUTURES U.S.'")
+                        logging.info("No records found for 'GOLD - COMMODITY EXCHANGE INC.'")
                         return None
                 elif report_type == "british_pound":
                     filtered_df = df[df['Market and Exchange Names'] == 'BRITISH POUND - CHICAGO MERCANTILE EXCHANGE']
@@ -113,7 +115,25 @@ def read_data_from_txt(report_type):
                             filtered_df = filtered_df.sort_values(by="As of Date in Form YYYY-MM-DD", ascending=False).head(5)
                         return filtered_df.to_dict(orient='records')
                     else:
-                        logging.info("No records found for 'USD INDEX - ICE FUTURES U.S.'")
+                        logging.info("No records found for 'BRITISH POUND - CHICAGO MERCANTILE EXCHANGE'")
+                        return None
+                elif report_type == "euro_currency":
+                    filtered_df = df[df['Market and Exchange Names'] == 'EURO FX - CHICAGO MERCANTILE EXCHANGE']
+                    if not filtered_df.empty:
+                        if 'As of Date in Form YYYY-MM-DD' in filtered_df.columns:
+                            filtered_df = filtered_df.sort_values(by="As of Date in Form YYYY-MM-DD", ascending=False).head(5)
+                        return filtered_df.to_dict(orient='records')
+                    else:
+                        logging.info("No records found for 'EURO FX - CHICAGO MERCANTILE EXCHANGE'")
+                        return None
+                elif report_type == "jpy_currency":
+                    filtered_df = df[df['Market and Exchange Names'] == 'JAPANESE YEN - CHICAGO MERCANTILE EXCHANGE']
+                    if not filtered_df.empty:
+                        if 'As of Date in Form YYYY-MM-DD' in filtered_df.columns:
+                            filtered_df = filtered_df.sort_values(by="As of Date in Form YYYY-MM-DD", ascending=False).head(5)
+                        return filtered_df.to_dict(orient='records')
+                    else:
+                        logging.info("No records found for 'EURO FX - CHICAGO MERCANTILE EXCHANGE'")
                         return None
                 else:
                     logging.warning("'Market_and_Exchange_Names' column not found.")
