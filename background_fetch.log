@@ -1,0 +1,1143 @@
+ERROR:root:Failed to fetch or write data for legacy_fut: write() argument must be str, not tuple
+Cron jobbbbbbbbbbbbbbbbbb start...................*************************************************************************************
+legacy_fut
+Selected: COT Legacy report. Futures only.
+Stored the extracted file FUT86_16.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2017
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2018
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2019
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2020
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2021
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2022
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2023
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2024
+Stored the file annual.txt in the working directory.
+legacy_futopt
+Selected: COT Legacy report. Futures and Options.
+Stored the extracted file Com95_16.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2017
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2018
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2019
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2020
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2021
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2022
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2023
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2024
+Stored the file annualof.txt in the working directory.
+supplemental_futopt
+Selected: COT Sumpplemental report. Futures and Options.
+Stored the extracted file CIT06_16.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2017
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2018
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2019
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2020
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2021
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2022
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2023
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2024
+Stored the file annualci.txt in the working directory.
+disaggregated_fut
+Selected: COT Disaggregated report. Futures only.
+Stored the extracted file F_Disagg06_16.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2017
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2018
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2019
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2020
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2021
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2022
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2023
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2024
+Stored the file f_year.txt in the working directory.
+disaggregated_futopt
+Selected: COT Disaggregated report. Futures and Options.
+Stored the extracted file C_Disagg06_16.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2017
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2018
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2019
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2020
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2021
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2022
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2023
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2024
+Stored the file c_year.txt in the working directory.
+traders_in_financial_futures_fut
+Selected: COT Traders in Financial Futures report. Futures only.
+Stored the extracted file F_TFF_2006_2016.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2017
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2018
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2019
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2020
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2021
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2022
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2023
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2024
+Stored the file FinFutYY.txt in the working directory.
+traders_in_financial_futures_futopt
+Selected: COT Traders in Financial Futures report. Futures and Options.
+Stored the extracted file C_TFF_2006_2016.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2017
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2018
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2019
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2020
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2021
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2022
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2023
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2024
+Stored the file FinComYY.txt in the working directory.
+legacy_fut
+ERROR:root:Failed to fetch or write data for gold: write() argument must be str, not tuple
+Selected: COT Legacy report. Futures only.
+Stored the extracted file FUT86_16.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2017
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2018
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2019
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2020
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2021
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2022
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2023
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2024
+Stored the file annual.txt in the working directory.
+legacy_futopt
+Selected: COT Legacy report. Futures and Options.
+Stored the extracted file Com95_16.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2017
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2018
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2019
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2020
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2021
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2022
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2023
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2024
+Stored the file annualof.txt in the working directory.
+supplemental_futopt
+Selected: COT Sumpplemental report. Futures and Options.
+Stored the extracted file CIT06_16.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2017
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2018
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2019
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2020
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2021
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2022
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2023
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2024
+Stored the file annualci.txt in the working directory.
+disaggregated_fut
+Selected: COT Disaggregated report. Futures only.
+Stored the extracted file F_Disagg06_16.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2017
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2018
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2019
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2020
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2021
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2022
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2023
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2024
+Stored the file f_year.txt in the working directory.
+disaggregated_futopt
+Selected: COT Disaggregated report. Futures and Options.
+Stored the extracted file C_Disagg06_16.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2017
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2018
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2019
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2020
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2021
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2022
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2023
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2024
+Stored the file c_year.txt in the working directory.
+traders_in_financial_futures_fut
+Selected: COT Traders in Financial Futures report. Futures only.
+Stored the extracted file F_TFF_2006_2016.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2017
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2018
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2019
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2020
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2021
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2022
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2023
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2024
+Stored the file FinFutYY.txt in the working directory.
+traders_in_financial_futures_futopt
+Selected: COT Traders in Financial Futures report. Futures and Options.
+Stored the extracted file C_TFF_2006_2016.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2017
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2018
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2019
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2020
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2021
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2022
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2023
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2024
+Stored the file FinComYY.txt in the working directory.
+legacy_fut
+Selected: COT Legacy report. Futures only.
+Stored the extracted file FUT86_16.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 
+ERROR:root:Failed to fetch or write data for fut_options: write() argument must be str, not tuple
+2017
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2018
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2019
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2020
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2021
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2022
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2023
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2024
+Stored the file annual.txt in the working directory.
+legacy_futopt
+Selected: COT Legacy report. Futures and Options.
+Stored the extracted file Com95_16.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2017
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2018
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2019
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2020
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2021
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2022
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2023
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2024
+Stored the file annualof.txt in the working directory.
+supplemental_futopt
+Selected: COT Sumpplemental report. Futures and Options.
+Stored the extracted file CIT06_16.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2017
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2018
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2019
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2020
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2021
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2022
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2023
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2024
+Stored the file annualci.txt in the working directory.
+disaggregated_fut
+Selected: COT Disaggregated report. Futures only.
+Stored the extracted file F_Disagg06_16.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2017
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2018
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2019
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2020
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2021
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2022
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2023
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2024
+Stored the file f_year.txt in the working directory.
+disaggregated_futopt
+Selected: COT Disaggregated report. Futures and Options.
+Stored the extracted file C_Disagg06_16.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2017
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2018
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2019
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2020
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2021
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2022
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2023
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2024
+Stored the file c_year.txt in the working directory.
+traders_in_financial_futures_fut
+Selected: COT Traders in Financial Futures report. Futures only.
+Stored the extracted file F_TFF_2006_2016.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2017
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2018
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2019
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2020
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2021
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2022
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2023
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2024
+Stored the file FinFutYY.txt in the working directory.
+traders_in_financial_futures_futopt
+Selected: COT Traders in Financial Futures report. Futures and Options.
+Stored the extracted file C_TFF_2006_2016.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2017
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2018
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2019
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2020
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2021
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2022
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2023
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2024
+Stored the file FinComYY.txt in the working directory.
+ERROR:root:Failed to fetch or write data for legacy_fut: write() argument must be str, not tuple
+Cron jobbbbbbbbbbbbbbbbbb start...................*************************************************************************************
+legacy_fut
+Selected: COT Legacy report. Futures only.
+Stored the extracted file FUT86_16.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2017
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2018
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2019
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2020
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2021
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2022
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2023
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2024
+Stored the file annual.txt in the working directory.
+legacy_futopt
+Selected: COT Legacy report. Futures and Options.
+Stored the extracted file Com95_16.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2017
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2018
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2019
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2020
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2021
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2022
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2023
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2024
+Stored the file annualof.txt in the working directory.
+supplemental_futopt
+Selected: COT Sumpplemental report. Futures and Options.
+Stored the extracted file CIT06_16.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2017
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2018
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2019
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2020
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2021
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2022
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2023
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2024
+Stored the file annualci.txt in the working directory.
+disaggregated_fut
+Selected: COT Disaggregated report. Futures only.
+Stored the extracted file F_Disagg06_16.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2017
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2018
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2019
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2020
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2021
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2022
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2023
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2024
+Stored the file f_year.txt in the working directory.
+disaggregated_futopt
+Selected: COT Disaggregated report. Futures and Options.
+Stored the extracted file C_Disagg06_16.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2017
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2018
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2019
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2020
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2021
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2022
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2023
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2024
+Stored the file c_year.txt in the working directory.
+traders_in_financial_futures_fut
+Selected: COT Traders in Financial Futures report. Futures only.
+Stored the extracted file F_TFF_2006_2016.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2017
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2018
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2019
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2020
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2021
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2022
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2023
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2024
+Stored the file FinFutYY.txt in the working directory.
+traders_in_financial_futures_futopt
+Selected: COT Traders in Financial Futures report. Futures and Options.
+Stored the extracted file C_TFF_2006_2016.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2017
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2018
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2019
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2020
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2021
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2022
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2023
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2024
+Stored the file FinComYY.txt in the working directory.
+legacy_fut
+ERROR:root:Failed to fetch or write data for gold: write() argument must be str, not tuple
+Selected: COT Legacy report. Futures only.
+Stored the extracted file FUT86_16.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2017
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2018
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2019
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2020
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2021
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2022
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2023
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2024
+Stored the file annual.txt in the working directory.
+legacy_futopt
+Selected: COT Legacy report. Futures and Options.
+Stored the extracted file Com95_16.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2017
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2018
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2019
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2020
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2021
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2022
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2023
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2024
+Stored the file annualof.txt in the working directory.
+supplemental_futopt
+Selected: COT Sumpplemental report. Futures and Options.
+Stored the extracted file CIT06_16.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2017
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2018
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2019
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2020
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2021
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2022
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2023
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2024
+Stored the file annualci.txt in the working directory.
+disaggregated_fut
+Selected: COT Disaggregated report. Futures only.
+Stored the extracted file F_Disagg06_16.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2017
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2018
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2019
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2020
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2021
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2022
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2023
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2024
+Stored the file f_year.txt in the working directory.
+disaggregated_futopt
+Selected: COT Disaggregated report. Futures and Options.
+Stored the extracted file C_Disagg06_16.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2017
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2018
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2019
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2020
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2021
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2022
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2023
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2024
+Stored the file c_year.txt in the working directory.
+traders_in_financial_futures_fut
+Selected: COT Traders in Financial Futures report. Futures only.
+Stored the extracted file F_TFF_2006_2016.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2017
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2018
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2019
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2020
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2021
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2022
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2023
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2024
+Stored the file FinFutYY.txt in the working directory.
+traders_in_financial_futures_futopt
+Selected: COT Traders in Financial Futures report. Futures and Options.
+Stored the extracted file C_TFF_2006_2016.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2017
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2018
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2019
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2020
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2021
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2022
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2023
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2024
+Stored the file FinComYY.txt in the working directory.
+legacy_fut
+Selected: COT Legacy report. Futures only.
+Stored the extracted file FUT86_16.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: ERROR:root:Failed to fetch or write data for fut_options: write() argument must be str, not tuple
+2017
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2018
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2019
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2020
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2021
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2022
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2023
+Stored the file annual.txt in the working directory.
+Selected: legacy_fut
+Downloaded single year data from: 2024
+Stored the file annual.txt in the working directory.
+legacy_futopt
+Selected: COT Legacy report. Futures and Options.
+Stored the extracted file Com95_16.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2017
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2018
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2019
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2020
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2021
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2022
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2023
+Stored the file annualof.txt in the working directory.
+Selected: legacy_futopt
+Downloaded single year data from: 2024
+Stored the file annualof.txt in the working directory.
+supplemental_futopt
+Selected: COT Sumpplemental report. Futures and Options.
+Stored the extracted file CIT06_16.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2017
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2018
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2019
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2020
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2021
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2022
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2023
+Stored the file annualci.txt in the working directory.
+Selected: supplemental_futopt
+Downloaded single year data from: 2024
+Stored the file annualci.txt in the working directory.
+disaggregated_fut
+Selected: COT Disaggregated report. Futures only.
+Stored the extracted file F_Disagg06_16.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2017
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2018
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2019
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2020
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2021
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2022
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2023
+Stored the file f_year.txt in the working directory.
+Selected: disaggregated_fut
+Downloaded single year data from: 2024
+Stored the file f_year.txt in the working directory.
+disaggregated_futopt
+Selected: COT Disaggregated report. Futures and Options.
+Stored the extracted file C_Disagg06_16.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2017
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2018
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2019
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2020
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2021
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2022
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2023
+Stored the file c_year.txt in the working directory.
+Selected: disaggregated_futopt
+Downloaded single year data from: 2024
+Stored the file c_year.txt in the working directory.
+traders_in_financial_futures_fut
+Selected: COT Traders in Financial Futures report. Futures only.
+Stored the extracted file F_TFF_2006_2016.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2017
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2018
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2019
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2020
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2021
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2022
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2023
+Stored the file FinFutYY.txt in the working directory.
+Selected: traders_in_financial_futures_fut
+Downloaded single year data from: 2024
+Stored the file FinFutYY.txt in the working directory.
+traders_in_financial_futures_futopt
+Selected: COT Traders in Financial Futures report. Futures and Options.
+Stored the extracted file C_TFF_2006_2016.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2017
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2018
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2019
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2020
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2021
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2022
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2023
+Stored the file FinComYY.txt in the working directory.
+Selected: traders_in_financial_futures_futopt
+Downloaded single year data from: 2024
+Stored the file FinComYY.txt in the working directory.
