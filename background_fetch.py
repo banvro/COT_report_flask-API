@@ -1,9 +1,11 @@
 import os
 import sys
+import logging
 from main import fetch_latest_cot_data  # Import the function from your Flask app
 
 def background_fetch_reports():
-    print("Fetching COT reports...")
+    logging.info("Cron jobbbbbbbbbbbbbbbbbb start...................*************************************************************************************")
+    # print("Fetching COT reports...")
     report_types = ['legacy_fut', 'gold', 'fut_options']
     for report_type in report_types:
         # print(f"Fetching data for {report_type}...")
@@ -16,3 +18,5 @@ if __name__ == "__main__":
 
 
 # >ssh root@167.88.38.16
+
+

@@ -9,7 +9,7 @@ import threading
 import logging
 
 # Configure logging
-logging.basicConfig(level=logging.INFO)
+# logging.basicConfig(level=logging.INFO)
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///cot_reports.db'
@@ -26,7 +26,7 @@ class CotReport(db.Model):
 with app.app_context():
     db.create_all()
 
-import cot_reports
+import cot_reports 
 
 def fetch_latest_cot_data(report_type):
     try:
@@ -46,22 +46,22 @@ def fetch_latest_cot_data(report_type):
                 # Write new data to the file, overwriting any existing content
                 with open(file_name, 'w') as file:
                     file.write(data)
-                logging.info(f"File {file_name} updated with new data for {report_type}.")
+                # logging.info(f"File {file_name} updated with new data for {report_type}.")
                 
     except Exception as e:
         logging.error(f"Failed to fetch or write data for {report_type}: {e}")
 
 
 def background_fetch_reports():
-    print("stearttttttttttttttt")
+    # print("stearttttttttttttttt")
     with app.app_context():  # Ensure the application context is active
         report_types = ['legacy_fut', 'gold', 'fut_options']
         for report_type in report_types:
-            logging.info(f"Fetching data for {report_type}...")
+            # logging.info(f"Fetching data for {report_type}...")
             fetch_latest_cot_data(report_type)
         
         # Schedule the next fetch in 60 seconds
-        logging.info("Background fetch complete. Scheduling next fetch in 60 seconds.")
+        # logging.info("Background fetch complete. Scheduling next fetch in 60 seconds.")
         threading.Timer(60, background_fetch_reports).start()
 
 @app.route("/")
@@ -70,7 +70,7 @@ def homepage():
 
 
 def read_data_from_txt(report_type):
-    print(report_type, "eeeeeeeeeeeeeeee")
+    # print(report_type, "eeeeeeeeeeeeeeee")
     file_mapping = {
         'legacy_fut': 'FinComYY.txt',
         'gold': 'annual.txt',
@@ -80,14 +80,14 @@ def read_data_from_txt(report_type):
         'fut_options': 'F_Disagg06_16.txt'
     }
     file_name = file_mapping.get(report_type)
-    print(file_name, "ooooooooooooooooooo")
+    # print(file_name, "ooooooooooooooooooo")
     if file_name and os.path.exists(file_name):
         with open(file_name, 'r') as file:
             file_content = file.read() 
             try:
                 csv_data = StringIO(file_content)
                 df = pd.read_csv(csv_data, low_memory=False)
-                logging.info("DataFrame columns: %s", df.columns.tolist())
+                # logging.info("DataFrame columns: %s", df.columns.tolist())
                 
                 if 'Market_and_Exchange_Names' in df.columns:
                     if report_type == "legacy_fut":
